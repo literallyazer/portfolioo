@@ -1,0 +1,140 @@
+.skills {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-background);
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+#skills-canvas {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.skills-content {
+    position: relative;
+}
+
+.skill-category {
+    margin-bottom: var(--spacing-lg);
+}
+
+.category-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.category-title::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-text);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.skill-item {
+    position: relative;
+    padding: var(--spacing-sm);
+    background-color: white;
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+    font-weight: 500;
+    margin-bottom: var(--spacing-xs);
+}
+
+.skill-level {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-accent);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-text);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 1s ease;
+}
+
+.skill-item.visible .skill-progress {
+    transform: scaleX(var(--progress));
+}
+
+.skill-percentage {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* Floating particles animation */
+.particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(var(--moveX), var(--moveY));
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    #skills-canvas {
+        height: 400px;
+    }
+}

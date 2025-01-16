@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azer Ghannoudi | Digital Innovator</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Azer Ghannoudi - Network & Systems Engineer specializing in Azure, Cybersecurity, and AI solutions">
+    <meta name="keywords" content="network engineer, systems engineer, azure, cybersecurity, AI">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Azer Ghannoudi | Digital Innovator">
+    <meta property="og:description" content="Network & Systems Engineer specializing in Azure, Cybersecurity, and AI solutions">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/nav.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/projects.css">
+    <link rel="stylesheet" href="styles/components/skills.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-text">Building Experience</div>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <!-- WebGL Container -->
+    <div class="webgl-container"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AG</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-footer">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main data-scroll-container>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Azer</span>
+                    <span class="hero-title-line">Ghannoudi</span>
+                </h1>
+                <p class="hero-tagline">From Building Secure Networks to Crafting Intelligent Systems</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="/resume.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Selected Projects</h2>
+            </div>
+            <div class="projects-container">
+                <!-- Project cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Technical Expertise</h2>
+            </div>
+            <div class="skills-container">
+                <canvas id="skills-canvas"></canvas>
+                <div class="skills-content">
+                    <!-- Skills content will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+            </div>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div id="map" class="contact-map"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/components/navigation.js"></script>
+    <script type="module" src="js/components/smoothscroll.js"></script>
+    <script type="module" src="js/components/projectsgallery.js"></script>
+    <script type="module" src="js/components/skillsvisualization.js"></script>
+    <script type="module" src="js/components/contactform.js"></script>
+    <script type="module" src="js/components/customcursor.js"></script>
+
+
+
+
+
+</body>
+</html>
