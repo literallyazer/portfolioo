@@ -1,10 +1,10 @@
-import { Navigation } from './components/Navigation';
-import { SmoothScroll } from './components/SmoothScroll';
-import { ProjectsGallery } from './components/ProjectsGallery';
-import { SkillsVisualization } from './components/SkillsVisualization';
-import { ContactForm } from './components/ContactForm';
-import { CustomCursor } from './components/CustomCursor';
-import { ShaderSystem } from './shaders/ShaderSystem';
+import { Navigation } from './components/Navigation.js';
+import { SmoothScroll } from './components/SmoothScroll.js';
+import { ProjectsGallery } from './components/ProjectsGallery.js';
+import { SkillsVisualization } from './components/SkillsVisualization.js';
+import { ContactForm } from './components/ContactForm.js';
+import { CustomCursor } from './components/CustomCursor.js';
+//import { ShaderSystem } from './shaders/ShaderSystem.js';
 
 class App {
     constructor() {
